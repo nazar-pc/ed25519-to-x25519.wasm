@@ -1,0 +1,57 @@
+{
+	"name"            : "ed25519-to-x25519.wasm",
+	"description"     : "Library for Ed25519 signing key pair into X25519/Curve25519 key pair suitable for Diffie-Hellman key exchange",
+	"keywords"        : [
+		"ed25519",
+		"x25519",
+		"curve25519",
+		"crypto",
+		"webassembly",
+		"wasm",
+		"emscripten"
+	],
+	"version"         : "0.1.0",
+	"homepage"        : "https://github.com/nazar-pc/ed25519-to-x25519.wasm",
+	"author"          : {
+		"name"  : "Nazar Mokrynskyi",
+		"email" : "nazar@mokrynskyi.com",
+		"url"   : "https://cleverstyle.org"
+	},
+	"repository"      : {
+		"type" : "git",
+		"url"  : "git://github.com/nazar-pc/ed25519-to-x25519.wasm.git"
+	},
+	"licenses"        : [
+		{
+			"type" : "MIT",
+			"url"  : "https://github.com/nazar-pc/ed25519-to-x25519.wasm/blob/master/license.txt"
+		}
+	],
+	"bugs"            : "https://github.com/nazar-pc/ed25519-to-x25519.wasm/issues",
+	"docs"            : "https://github.com/nazar-pc/ed25519-to-x25519.wasm",
+	"main"            : "src/index.js",
+	"files"           : [
+		"dist",
+		"src",
+		"ed25519-to-x25519.js",
+		"ed25519-to-x25519.wasm"
+	],
+	"scripts"         : {
+		"test"   : "tape test/**/*.js",
+		"vendor" : "git clone https://github.com/jedisct1/libsodium.git vendor; cd vendor; git checkout 1.0.15",
+		"build"  : "gulp build"
+	},
+	"devDependencies" : {
+		"browserify"  : "^14.4.0",
+		"del"         : "^3.0.0",
+		"glob"        : "^7.1.2",
+		"gulp"        : "^3.9.1",
+		"gulp-rename" : "^1.2.2",
+		"gulp-tap"    : "^1.0.1",
+		"gulp-uglify" : "^3.0.0",
+		"tape"        : "^4.8.0"
+	},
+	"jspm"            : {
+		"main" : "dist/ed25519-to-x25519.wasm.browser.js"
+	}
+}
