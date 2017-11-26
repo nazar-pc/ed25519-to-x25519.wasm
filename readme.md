@@ -1,5 +1,5 @@
 # ed25519-to-x25519.wasm
-Library for Ed25519 signing key pair into X25519/Curve25519 key pair suitable for Diffie-Hellman key exchange.
+Library for converting Ed25519 signing key pair into X25519/Curve25519 key pair suitable for Diffie-Hellman key exchange.
 
 Based on [libsodium](https://github.com/jedisct1/libsodium), compiles subset of libsodium to WebAssembly and provides 2 wrapper functions for public/private keys conversion.
 
