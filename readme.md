@@ -9,8 +9,6 @@ npm install ed25519-to-x25519.wasm
 ```
 
 ## How to use
-NOTE: In modern versions of Node.js (4.x and higher) `Buffer` inherits `Uint8Array`, so you can pass `Buffer` directly whenever `Uint8Array` is expected.
-
 Node.js:
 ```javascript
 var ed25519_to_x25519 = require('ed25519-to-x25519.wasm')
@@ -46,4 +44,8 @@ Feel free to create issues and send pull requests (for big changes create an iss
 When reading LiveScript code make sure to configure 1 tab to be 4 spaces (GitHub uses 8 by default), otherwise code might be hard to read.
 
 ## License
-MIT, see license.txt
+Free Public License 1.0.0 / Zero Clause BSD License
+
+https://opensource.org/licenses/FPL-1.0.0
+
+https://tldrlegal.com/license/bsd-0-clause-license

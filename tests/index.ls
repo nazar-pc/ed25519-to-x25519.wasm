@@ -1,8 +1,7 @@
 /**
- * @package   ed25519-to-x25519.wasm
- * @author    Nazar Mokrynskyi <nazar@mokrynskyi.com>
- * @copyright Copyright (c) 2017, Nazar Mokrynskyi
- * @license   MIT License, see license.txt
+ * @package ed25519-to-x25519.wasm
+ * @author  Nazar Mokrynskyi <nazar@mokrynskyi.com>
+ * @license 0BSD
  */
 lib		= require('..')
 test	= require('tape')
