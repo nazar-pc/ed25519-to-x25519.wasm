@@ -23,7 +23,7 @@
       if (result !== 0) {
         return null;
       }
-      x25519_public_key = x25519_public_key.get();
+      x25519_public_key = x25519_public_key['get']();
       free();
       return x25519_public_key;
     }
@@ -37,12 +37,12 @@
       x25519_private_key = allocate(32);
       ed25519_private_key = allocate(0, ed25519_private_key);
       lib['_crypto_sign_ed25519_sk_to_curve25519'](x25519_private_key, ed25519_private_key);
-      x25519_private_key = x25519_private_key.get();
+      x25519_private_key = x25519_private_key['get']();
       free();
       return x25519_private_key;
     }
     return {
-      'ready': lib.then,
+      'ready': lib['then'],
       'convert_public_key': convert_public_key,
       'convert_private_key': convert_private_key
     };
